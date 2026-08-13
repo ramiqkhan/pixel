@@ -65,12 +65,12 @@ export default function SplashScreen({ onFinish }) {
         />
       </div>
 
-      {/* System Loading Text */}
+      {/* System Loading Text (Made larger and responsive) */}
       <motion.span
         initial={{ opacity: 0 }}
         animate={{ opacity: [0, 1, 0.5, 1] }}
         transition={{ delay: 0.3, repeat: Infinity, duration: 1.5 }}
-        className="font-mono text-[9px] text-emerald-400/80 tracking-widest uppercase mt-3 z-10"
+        className="font-mono font-semibold text-xs sm:text-sm tracking-[0.3em] text-emerald-400/90 uppercase mt-4 z-10 text-center px-4"
       >
         INITIALIZING SYSTEM...
       </motion.span>

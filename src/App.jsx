@@ -16,9 +16,8 @@ function AnimatedRoutes() {
   useEffect(() => {
     // Show splash screen ONLY for Home ('/'), Get Quote ('/get-quote'), and About Us ('/about')
     if (
-      location.pathname === '/' || 
-      location.pathname === '/get-quote' || 
-      location.pathname === '/about'
+      location.pathname === '/'  
+    
     ) {
       setLoading(true);
     } else {
