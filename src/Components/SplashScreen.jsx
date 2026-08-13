@@ -17,8 +17,7 @@ export default function SplashScreen({ onFinish }) {
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0, transition: { duration: 0.8, ease: 'easeInOut' } }}
-      className="fixed inset-0 h-[100dvh] w-screen z-[9999] flex flex-col items-center justify-center bg-black text-white select-none overflow-hidden touch-none"
-      style={{ backgroundColor: '#000000' }}
+      className="fixed -inset-20 z-[9999] flex flex-col items-center justify-center bg-black text-white select-none overflow-hidden touch-none"
     >
       {/* Background Radial Glow (Scaled for mobile & desktop) */}
       <div className="absolute w-[280px] h-[280px] sm:w-[400px] sm:h-[400px] bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
@@ -66,7 +65,7 @@ export default function SplashScreen({ onFinish }) {
         />
       </div>
 
-      {/* System Loading Text */}
+      {/* System Loading Text (Made larger and responsive) */}
       <motion.span
         initial={{ opacity: 0 }}
         animate={{ opacity: [0, 1, 0.5, 1] }}
