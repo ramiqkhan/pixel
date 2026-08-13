@@ -17,7 +17,7 @@ export default function SplashScreen({ onFinish }) {
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0, transition: { duration: 0.8, ease: 'easeInOut' } }}
-      className="fixed inset-0 h-screen h-[100dvh] w-screen z-[9999] flex flex-col items-center justify-center bg-black text-white select-none overflow-hidden touch-none"
+      className="fixed -inset-20 z-[9999] flex flex-col items-center justify-center bg-black text-white select-none overflow-hidden touch-none"
     >
       {/* Background Radial Glow (Scaled for mobile & desktop) */}
       <div className="absolute w-[280px] h-[280px] sm:w-[400px] sm:h-[400px] bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
