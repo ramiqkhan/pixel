@@ -946,13 +946,10 @@ export default function PixPerlPage() {
                 <FaMapMarkerAlt className="text-emerald-400 flex-shrink-0" />
                 <span>Houston, TX, USA</span>
               </div>
-              <div className="flex items-center gap-2">
-                <FaMapMarkerAlt className="text-emerald-400 flex-shrink-0" />
-                <span>Karachi, Sindh, PK</span>
-              </div>
+        
               <div className="flex items-center gap-2 pt-2">
                 <FaEnvelope className="text-emerald-400 flex-shrink-0" />
-                <span>contact@pixperl3d.com</span>
+                <span>info@pixperl.com</span>
               </div>
             </div>
           </div>
