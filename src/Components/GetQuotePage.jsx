@@ -85,7 +85,7 @@ export default function GetQuotePage() {
     servicesNeeded: [],
     contractDuration: '12 Months',
     projectDetails: '',
-    urgency: 'Standard (Within 1-2 weeks)',
+    urgency: 'Standard',
   });
 
   const serviceOptions = [
