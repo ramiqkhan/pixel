@@ -113,20 +113,22 @@ const [ticketId, setTicketId] = useState("");
       };
     });
   };
-
 const handleSubmit = async (e) => {
   e.preventDefault();
 
   try {
     setLoading(true);
 
-    const response = await fetch("http://localhost:5000/api/quotes", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
+    const response = await fetch(
+      "https://pixelperl-backend.vercel.app/api/quotes",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      }
+    );
 
     const data = await response.json();
 
